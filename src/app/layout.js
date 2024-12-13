@@ -1,7 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Providers } from "@/redux/provider";
-
+import Nav from "@/components/Nav";
 
 
 
@@ -16,9 +16,13 @@ export default function RootLayout({ children }) {
     <Providers>
     <html lang="en">
       <body
-        className={` antialiased`}
+        className={`  `}
       >
+        <Nav/>
+        <section className="px-6 md:px-40"> 
+
         {children}
+        </section>
       </body>
     </html>
     </Providers>
